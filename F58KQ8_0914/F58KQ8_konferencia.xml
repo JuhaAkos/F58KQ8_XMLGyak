@@ -1,0 +1,24 @@
+<Konferencia>
+	<cim>Adatkezeles XML-ben</cim>
+	<hallgatok>
+		<hallgato id="1">
+			<nev>Juhasz Akos</nev>
+			<lakcim>Miskolc</lakcim>
+		</hallgato>
+		<hallgato id="2">
+			<nev>Kis Pista</nev>
+			<lakcim>Budapest</lakcim>
+		</hallgato>
+		<hallgato id="11">
+			<nev>Nagy Anna</nev>
+			<lakcim>Miskolc</lakcim>
+		</hallgato>
+	</hallgatok>
+	<helyszin>Miskolci egyetem</helyszin>
+	<eloado>
+		<nev>Bednarik Laszlo</nev>
+		<adoszam>123</adoszam>
+		<lakcim>Miskolc</lakcim>
+	</eloado>
+	<datum>2022.09.14</datum>
+</Konferencia>
