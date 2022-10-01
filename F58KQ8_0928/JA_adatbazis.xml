@@ -1,0 +1,8 @@
+<!DOCTYPE JA_adatbazis SYSTEM "JA_adatbazis.dtd">
+
+<JA_adatbazis>
+	<DOLGOZO kod="1">
+		<nev></nev>
+		<fizetes></fizetes>
+	</DOLGOZO>
+</JA_adatbazis>
