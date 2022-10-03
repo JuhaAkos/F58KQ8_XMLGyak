@@ -2,7 +2,7 @@
     <!ELEMENT ora (targy, idopont, helyszin, oktato, szak)>
     <!ATTLIST ora 
                 id ID #REQUIRED
-                tipus(elmelet|gyakorlat) 'elmelet' #REQUIRED>
+                tipus(elmelet|gyakorlat) 'elmelet'>
         <!ELEMENT targy (#PCDATA)>
         <!ELEMENT idopont (nap, tol, ig)>
             <!ELEMENT nap (#PCDATA)>
