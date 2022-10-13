@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schema xmlns="http://www.w3.org/2001/XMLSchema" targetNamespace="http://www.example.org/JA_XMLSchema" xmlns:tns="http://www.example.org/JA_XMLSchema" elementFormDefault="qualified">
+
+	<xs:element name="ora" type="oraTipus"/>
+	<xs:element name="idopont" type="idopont"/>
+
+	<xs:simpleType name="idoTipus">
+		<xs:restriction base="xs:integer">
+			<xs:minInclusive value="0"/>
+			<xs:maxInclusive value="24"/>
+		</xs:restriction>
+	</xs:simpleType>
+
+	<xs:element name="JA_orarend">
+	
+	<xs:complexType>
+	<xs:sequence>
+		
+		<xs:element ref="ora">
+		<xs:attribute name="tipus" type="xs:string"/>
+		<xs:complexType>
+		<xs:sequence>
+			
+			<xs:element name="tárgy" type="xs:string"/>
+			<xs:element ref="idopont">
+				<xs:complexType>
+				<xs:sequence>
+					<xs:element name="nap" type="xs:string"/>
+					<xs:element name="tol" type="idoTipus"/>
+					<xs:element name="ig" type="idoTipus"/>
+				</xs:sequence>
+				</xs:complexType>
+			</xs:element>
+			<xs:element name="helyszín" type="xs:string"/>
+			<xs:element name="oktató" type="xs:string"/>
+			<xs:element name="szak" type="xs:string"/>
+		
+		</xs:sequence>
+		</xs:complexType>
+		</xs:element>
+		
+	</xs:sequence>
+	</xs:complexType>
+	</xs:element>

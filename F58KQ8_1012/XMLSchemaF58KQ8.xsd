@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schema xmlns="http://www.w3.org/2001/XMLSchema" targetNamespace="http://www.example.org/JA_XMLSchema" xmlns:tns="http://www.example.org/JA_XMLSchema" elementFormDefault="qualified">
+
+	<!--  Egyszerű típusok - Felépítés -->
+	<xs:element name="vendeglatas">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="etterem" type="etteremTipus"/>
+				<xs:element name="foszakacs" type="foszakacsTipus"/>
+				<xs:element name="szakacs" type="szakacsTipus"/>
+				<xs:element name="gyakornok" type="gykornokTipus"/>
+				<xs:element name="vendeg" type="vendegTipus"/>
+				<xs:element name="rendeles" type="rendelesTipus"/>
+			</xs:sequence>
+		</xs:complexType>
+		
+		
+		<!--  Kulcsok -->
+		<xs:key name="etterem_kulcs">
+			<xs:selector xpath="etterem"/>
+			<xs:field xpath="@ekod"/>
+		</xs:key>
+		
+		<xs:key name="foszakacs_kulcs">
+			<xs:selector xpath="foszakacs"/>
+			<xs:field xpath="@fkod"/>
+		</xs:key>
+		
+		<xs:key name="szakacs_kulcs">
+			<xs:selector xpath="szakacs"/>
+			<xs:field xpath="@szkod"/>
+		</xs:key>
+		
+		<xs:key name="gyakornok_kulcs">
+			<xs:selector xpath="gyakornok"/>
+			<xs:field xpath="@gykod"/>
+		</xs:key>
+		
+		<xs:key name="vendeg_kulcs">
+			<xs:selector xpath="vendeg"/>
+			<xs:field xpath="@vkod"/>
+		</xs:key>
+		
+			
+		<!--  Idegen kulcsok -->	
+		<xs:keyref refer="etterem_kulcs" name="etterem_idegen_kulcs">
+			<xs:selector xpath="rendeles"/>
+			<xs:field xpath="@e_v_e"/>
+		</xs:keyref>
+		
+		<xs:keyref refer="etterem_kulcs" name="etterem_idegen_kulcs">
+			<xs:selector xpath="foszakacs"/>
+			<xs:field xpath="@e_f"/>
+		</xs:keyref>
+		
+		<xs:keyref refer="etterem_kulcs" name="etterem_idegen_kulcs">
+			<xs:selector xpath="szakacs"/>
+			<xs:field xpath="@e_sz"/>
+		</xs:keyref>
+		
+		<xs:keyref refer="etterem_kulcs" name="etterem_idegen_kulcs">
+			<xs:selector xpath="gyakornok"/>
+			<xs:field xpath="@e_gy"/>
+		</xs:keyref>
+		
+		<!--  Az 1:1 kapcsolat -->	
+		<xs:unique name="unique_foszakacs">
+			<xs:selector xpath="foszakacs"/>
+			<xs:field xpath="@e_f"/>
+		</xs:unique>
+		
+		<!-- KOMPLEX TÍPUSOK -->
+		
+		<xs:element name="Vendéglátás">
+			<xs:complexType>
+			<xs:sequence>
+			
+			<xs:element name="Étterem">
+				<xs:attribute name="ekod" type="xs::integer"/>
+				<xs:complexType>
+				<xs:sequence>
+				<xs:element name="nev" type="xs:string"/>
+				<xs:element name="cim">
+					<xs:complexType>
+					<xs:sequence>
+						<xs:element name="város" type="xs:string"/>
+						<xs:element name="utca" type="xs:string"/>
+						<xs:element name="házszám" type="xs:integer"/>
+					</xs:sequence>
+					</xs:complexType>
+				</xs:element>	
+				<xs:element name="csillag" type="xs:integer"/>
+				</xs:sequence>
+				</xs:complexType>
+			</xs:element>
+			
+			<xs:element name="Főszakács">	
+				<xs:attribute name="fkod" type="xs::integer"/>
+				<xs:attribute name="e_f" type="xs::integer"/>
+				<xs:complexType>
+				<xs:sequence>
+					<xs:element name="név" type="xs:string"/>
+					<xs:element name="életkor" type="xs:integer"/>
+					<xs:element name="végzettség" type="xs:string"/>
+				</xs:sequence>
+				</xs:complexType>
+			</xs:element>
+			
+			<xs:element name="Szakács">	
+				<xs:attribute name="szkod" type="xs::integer"/>
+				<xs:attribute name="e_sz" type="xs::integer"/>
+				<xs:complexType>
+				<xs:sequence>
+					<xs:element name="név" type="xs:string"/>
+					<xs:element name="részleg" type="xs:integer"/>
+					<xs:element name="végzettség" type="xs:string"/>
+				</xs:sequence>
+				</xs:complexType>
+			</xs:element>
+			
+			<xs:element name="Gyakornok">
+				<xs:attribute name="gykod" type="xs::integer"/>
+				<xs:attribute name="e_gy" type="xs::integer"/>
+				<xs:complexType>
+				<xs:sequence>
+					<xs:element name="név" type="xs:string"/>
+					<xs:element name="gyakorlat">
+					<xs:complexType>
+					<xs:sequence>
+						<xs:element name="kezdete" type="xs:date"/>
+						<xs:element name="időtartama" type="xs:string"/>
+					</xs:sequence>
+					</xs:complexType>
+					</xs:element>	
+					<xs:element name="műszak" type="xs:string"/>
+				</xs:sequence>
+				</xs:complexType>
+			</xs:element>
+			
+			<xs:element name="Vendég">
+				<xs:attribute name="e_v_v" type="xs::integer"/>
+				<xs:attribute name="vkod" type="xs::integer"/>
+				<xs:complexType>
+				<xs:sequence>
+					<xs:element name="összeg" type="xs:integer"/>
+					<xs:element name="étel" type="xs:string"/>
+					<xs:element name="cím">
+					<xs:complexType>
+					<xs:sequence>
+						<xs:element name="város" type="xs:string"/>
+						<xs:element name="utca" type="xs:string"/>
+						<xs:element name="házszám" type="xs:integer"/>
+					</xs:sequence>
+					</xs:complexType>
+					</xs:element>	
+					<xs:element name="életkor" type="xs:integer"/>
+					<xs:element name="név" type="xs:string"/>
+				</xs:sequence>
+				</xs:complexType>
+			</xs:element>
+			
+			</xs:sequence>
+			</xs:complexType>
+		</xs:element>
+		
+	</xs:element>
+
+
+</schema>
