@@ -1,0 +1,35 @@
+<!DOCTYPE kurzusfelvetel SYSTEM "JA_kurzusfelvetel.dtd">
+
+<kurzusfelvetel tanev="2022_2023 I." egyetem="ME">
+
+	<hallgato id="F58KQ8">
+		<hnev>Juhász Ákos</hnev>
+		<szulev>2001-08-11</szulev>
+		<szak evf="5">Mérnökinformatikus</szak>
+	</hallgato>
+
+	<kurzusok>
+		<kurzus id="GEIAL322-B">
+			<kurzusnev>Adatkezelés XML-ben</kurzusnev>
+			<kredit>5</kredit>
+			<hely>XXXII. előadó</hely>
+			<idopont>Kedd 12:00-13:00</idopont>
+			<oktato>DR. Bednarik László</oktato>		
+		</kurzus>
+		<kurzus id="GEIAL331-B" jovahagyas="igen">
+			<kurzusnev>Webtechnológiák I.</kurzusnev>
+			<kredit>5</kredit>
+			<hely>XXX. előadó</hely>
+			<idopont>Hétfő 8:00-10:00</idopont>
+			<oktato>Agárdi Anita</oktato>	
+		</kurzus>
+		<kurzus id="GEIAL322-B" nyelv="angol">
+			<kurzusnev>Adatbázis rendszerek I.</kurzusnev>
+			<kredit>5</kredit>
+			<hely>In101</hely>
+			<idopont>Kedd 8:00-9:30</idopont>
+			<oktato>Dr. Kovács László</oktato>	
+			<oraado>Oraado Otto</oraado>
+		</kurzus>
+	<kurzusok>	
+</kurzusfelvetel>	
