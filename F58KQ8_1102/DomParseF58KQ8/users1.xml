@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<users xmlns="DOMF58KQ8">
+  <user id="1">
+    <firstname>Ákos</firstname>
+    <lastname>Juhász</lastname>
+    <profession>student</profession>
+  </user>
+  <user id="2">
+    <firstname>Pista</firstname>
+    <lastname>Kis</lastname>
+    <profession>student</profession>
+  </user>
+</users>
