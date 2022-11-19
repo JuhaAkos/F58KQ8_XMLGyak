@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?xml-stylesheet type="text/xsl" href="orarend_for-each.xsl"?>
+
+<JA_orarend>	
+	<ora id="1" tipus="Elmelet">
+		<targy>Web technologiak</targy>
+		<idopont>
+			<nap>Hetfo</nap>
+			<tol>8</tol>
+			<ig>10</ig>
+		</idopont>
+		<helszin>XXX A1</helszin>
+		<oktato>Agardi Anita</oktato>
+		<szak>Mernokinformatikus</szak>
+	</ora>
+	
+	<ora id="2" tipus="Elmelet">
+		<targy>Szoftvertesztelés</targy>
+		<idopont>
+			<nap>Hetfo</nap>
+			<tol>10</tol>
+			<ig>12</ig>
+		</idopont>
+		<helszin>A1/316</helszin>
+		<oktato>Kunne Dr. Tamas Judit</oktato>
+		<szak>Mernokinformatikus</szak>
+	</ora>
+	
+	<ora id="3" tipus="Elmelet">
+		<targy>Integralt vallalati rendszerek alapjai</targy>
+		<idopont>
+			<nap>Hetfo</nap>
+			<tol>16</tol>
+			<ig>18</ig>
+		</idopont>
+		<helszin>A1/313</helszin>
+		<oktato>Dr. Samad Dadvandipour</oktato>
+		<szak>Mernokinformatikus</szak>
+	</ora>
+	
+	<ora id="4" tipus="Gyakorlat">
+		<targy>Szoftverteszteles</targy>
+		<idopont>
+			<nap>Hetfo</nap>
+			<tol>18</tol>
+			<ig>20</ig>
+		</idopont>
+		<helszin>In/101</helszin>
+		<oktato>Kunne Dr. Tamas Judit</oktato>
+		<szak>Mernokinformatikus</szak>
+	</ora>
+	
+	<ora id="5" tipus="Elmelet">
+		<targy>Mesterseges intelligenciak</targy>
+		<idopont>
+			<nap>Kedd</nap>
+			<tol>9</tol>
+			<ig>12</ig>
+		</idopont>
+		<helszin>II A2</helszin>
+		<oktato>Kunne Dr. Tamas Judit</oktato>
+		<szak>Mernokinformatikus</szak>
+	</ora>
+	
+	<ora id="6" tipus="Elmelet">
+		<targy>Adatkezeles XML-ben</targy>
+		<idopont>
+			<nap>Kedd</nap>
+			<tol>14</tol>
+			<ig>16</ig>
+		</idopont>
+		<helszin>XXXII A1</helszin>
+		<oktato>Dr. Bednarik Laszlo</oktato>
+		<szak>Mernokinformatikus</szak>
+	</ora>
+	
+	<ora id="7" tipus="Gyakorlat">
+		<targy>Web  technologiak</targy>
+		<idopont>
+			<nap>Kedd</nap>
+			<tol>18</tol>
+			<ig>20</ig>
+		</idopont>
+		<helszin>In/202</helszin>
+		<oktato>Agardi Anita</oktato>
+		<szak>Mernokinformatikus</szak>
+	</ora>
+	
+	<ora id="8" tipus="Elmelet">
+		<targy>Webalkalmazasok Java-ban</targy>
+		<idopont>
+			<nap>Szerda</nap>
+			<tol>8</tol>
+			<ig>10</ig>
+		</idopont>
+		<helszin>In/103</helszin>
+		<oktato>Dr. Barabas Peter</oktato>
+		<szak>Mernokinformatikus</szak>
+	</ora>
+	
+	<ora id="9" tipus="Gyakorlat">
+		<targy>Adatkezeles XML-ben</targy>
+		<idopont>
+			<nap>Szerda</nap>
+			<tol>10</tol>
+			<ig>12</ig>
+		</idopont>
+		<helszin>In/101</helszin>
+		<oktato>Dr. Bednarik Laszlo</oktato>
+		<szak>Mernokinformatikus</szak>
+	</ora>
+	
+	<ora id="10" tipus="Gyakorlat">
+		<targy>Webalkalmazasok Java-ban</targy>
+		<idopont>
+			<nap>Szerda</nap>
+			<tol>13</tol>
+			<ig>15</ig>
+		</idopont>
+		<helszin>In/202</helszin>
+		<oktato>Dr. Barabas Peter</oktato>
+		<szak>Mernokinformatikus</szak>
+	</ora>
+	
+	<ora id="11" tipus="Gyakorlat">
+		<targy>Integralt vallalati rendszerek alapjai</targy>
+		<idopont>
+			<nap>Szerda</nap>
+			<tol>15</tol>
+			<ig>17</ig>
+		</idopont>
+		<helszin>In/15</helszin>
+		<oktato>Kulcsarne Dr.Forrai Mónika</oktato>
+		<szak>Mernokinformatikus</szak>
+	</ora>
+	
+	<ora id="12" tipus="Gyakorlat">
+		<targy>mesterseges Intelligenciak</targy>
+		<idopont>
+			<nap>Szerda</nap>
+			<tol>17</tol>
+			<ig>18</ig>
+		</idopont>
+		<helszin>In/15</helszin>
+		<oktato>Fazekas Levente</oktato>
+		<szak>Mernokinformatikus</szak>
+	</ora>
+	
+	
+</JA_orarend>

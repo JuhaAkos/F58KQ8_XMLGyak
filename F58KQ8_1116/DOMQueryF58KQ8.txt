@@ -1,0 +1,8 @@
+if (nNode.getNodeType( == Node.ELEMENT_NODE) {
+	Element eElement = (Element) nNode;
+	
+	System.out.println("\ncompany: ");
+	System.out.println(eElement.getAttribute("\ncompany: "));
+	
+	NodeList carNameList = eElement.getElementsByTagName("carname");
+}

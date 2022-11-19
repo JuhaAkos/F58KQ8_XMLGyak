@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?xml-stylesheet type="text/xsl" href="students_for-each.xsl"?>
+
+<class>
+	<student id='1'>
+		<keresztnév>Ákos</keresztnév>
+		<vezetéknév>Juhász</vezetéknév>
+		<becenév>Kisjuhász</becenév>
+		<kor>21</kor>
+		<osztondij>100000</osztondij>
+	</student>
+	
+	<student id='2'>
+		<keresztnév>Pista</keresztnév>
+		<vezetéknév>Kis</vezetéknév>
+		<becenév>KisPisti</becenév>
+		<kor>30</kor>
+		<osztondij>200000</osztondij>
+	</student>
+	
+	<student id='3'>
+		<keresztnév>Ádám</keresztnév>
+		<vezetéknév>Nagy</vezetéknév>
+		<becenév>Ádi</becenév>
+		<kor>40</kor>
+		<osztondij>300000</osztondij>
+	</student>
+	
+	
+</class>
