@@ -38,7 +38,7 @@
 					
 					<xsl:for-each select="root/vizsga/vizsga">
 						<tr>
-							<td><xsl:value-of select = "sum(/vizsga/jegy)"/></td>
+							<td><xsl:value-of select = "sum(/vizsga/jegy) div(/vizsga/jegy)"/></td>
 						</tr>
 					</xsl:for-each>	
 					
