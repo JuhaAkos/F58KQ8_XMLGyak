@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<root>
+	<_id>F58KQ8</_id>
+	<name>vizsgak</name>
+	<vizsga>
+		<vizsga>
+			<kurzus>Adatbázisrendszerek II.</kurzus>
+			<helyszin>E12</helyszin>
+			<idopont>
+				<nap>2022.06.07</nap>
+				<tol>10</tol>
+				<ig>14</ig>
+			</idopont>
+			<oktato>Dr. Kovács László József</oktato>
+			<jegy>3</jegy>
+		</vizsga>
+		<vizsga>
+			<kurzus>Biztonság és védelem a számítástechnikában</kurzus>
+			<helyszin>L103</helyszin>
+			<idopont>
+				<nap>2022.06.16</nap>
+				<tol>11</tol>
+				<ig>13</ig>
+			</idopont>
+			<oktato>Wagner György</oktato>
+			<jegy>4</jegy>
+		</vizsga>
+		<vizsga>
+			<kurzus>Numerikus Analízis</kurzus>
+			<helyszin>T042</helyszin>
+			<idopont>
+				<nap>2022.05.25</nap>
+				<tol>11</tol>
+				<ig>13</ig>
+			</idopont>
+			<oktato>Dr. Földvári Attila József</oktato>
+			<jegy>3</jegy>
+		</vizsga>
+		<vizsga>
+			<kurzus>Számítógépi grafika</kurzus>
+			<helyszin>A4/3</helyszin>
+			<idopont>
+				<nap>2022.05.31</nap>
+				<tol>10</tol>
+				<ig>12</ig>
+			</idopont>
+			<oktato>Dr. Juhász Imre</oktato>
+			<jegy>3</jegy>
+		</vizsga>
+		<vizsga>
+			<kurzus>java programozás</kurzus>
+			<helyszin>L102</helyszin>
+			<idopont>
+				<nap>2022.05.20</nap>
+				<tol>9</tol>
+				<ig>11</ig>
+			</idopont>
+			<oktato>Szűcs Miklós</oktato>
+			<jegy>3</jegy>
+		</vizsga>
+	</vizsga>
+</root>
