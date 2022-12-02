@@ -2,7 +2,7 @@
 <root>
 	<_id>F58KQ8</_id>
 	<name>vizsgak</name>
-	<vizsga>
+	<vizsgak>
 		<vizsga>
 			<kurzus>Adatbázisrendszerek II.</kurzus>
 			<helyszin>E12</helyszin>
@@ -58,5 +58,5 @@
 			<oktato>Szűcs Miklós</oktato>
 			<jegy>3</jegy>
 		</vizsga>
-	</vizsga>
+	</vizsgak>
 </root>

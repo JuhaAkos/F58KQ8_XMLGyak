@@ -13,11 +13,11 @@ public class JSONreadF58KQ8 {
 		JSONObject Jobj = new JSONObject(); 	
 		JSONParser parser = new JSONParser();		
 		
-		try (Reader reader = new FileReader("JSONF58KQ8.json")) {
+		try (Reader reader = new FileReader("vizsgakF58KQ8.json")) {
 	
 	        JSONObject jsonObject = (JSONObject) parser.parse(reader);	        
 	
-	        Jobj.put("student", jsonObject.get("student"));
+	        Jobj.put("root", jsonObject.get("root"));
 	       
 	        String jsonText = Jobj.toString();
 	        System.out.println(jsonText);

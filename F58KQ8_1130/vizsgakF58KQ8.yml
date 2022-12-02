@@ -1,7 +1,7 @@
 root:
   _id: F58KQ8
   name: vizsgak
-  vizsga:
+  vizsgak:
     vizsga:
       - kurzus: Adatbázisrendszerek II.
         helyszin: E12
